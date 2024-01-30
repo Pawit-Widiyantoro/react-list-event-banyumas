@@ -38,11 +38,9 @@ const About2 = () => {
             <Grid item xs={6}>
                 <img src="./assets/landing-page-2.png"/>
             </Grid>
-            <IconButton
-            style={{ marginLeft:'auto',color:'#284b63', border:'5px solid #284b63', fontWeight:'bold' }}
-            >
-            < ArrowUpwardRoundedIcon />
-            </IconButton>
+                <IconButton style={{ marginLeft:'auto',color:'#284b63', border:'5px solid #284b63', fontWeight:'bold' }}>
+                    < ArrowUpwardRoundedIcon />
+                </IconButton>
         </Grid>
     )
 }

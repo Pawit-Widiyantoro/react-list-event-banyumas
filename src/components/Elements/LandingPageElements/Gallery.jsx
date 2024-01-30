@@ -46,10 +46,8 @@ const Gallery=() => {
                 <img style={imgStyles} src="./assets/gambar8-1.png"/>
             </Grid>
             <Grid item xs={12} style={{ paddingRight:'50px', marginTop:'50px' }}>
-                <IconButton
-                style={{ display:'flex',marginLeft:'auto',color:'#284b63', border:'5px solid #284b63', fontWeight:'bold' }}
-                >
-                < ArrowUpwardRoundedIcon />
+                <IconButton style={{ display:'flex',marginLeft:'auto',color:'#284b63', border:'5px solid #284b63', fontWeight:'bold' }}>
+                    < ArrowUpwardRoundedIcon />
                 </IconButton>
             </Grid>
         </Grid>
