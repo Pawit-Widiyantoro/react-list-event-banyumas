@@ -1,23 +1,38 @@
 import React from "react";
 import { AppBar, Toolbar, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const LandingNav = () => {
-    const buttonStyles= {
+    const menuStyles= {
         color:'#fff',
         marginRight:'20px',
         marginLeft:'20px', 
         fontFamily: 'Open Sans-Regular, Helvetica', 
     }
+    const AppBarStyle={ 
+        backgroundColor:'#284b63', 
+        paddingRight:'180px', 
+        fontFamily:'Open Sans-Regular, Helvetica' 
+    }
+    const ButtonStyles={ 
+        color:'#fff', 
+        backgroundColor:'#284b63', 
+        borderRadius:'30px', 
+        borderColor:'#fff', 
+        width:'120px' 
+    }
     return (
-        <AppBar position="static" elevation={0} style={{ backgroundColor:'#284b63', paddingRight:'180px', fontFamily:'Open Sans-Regular, Helvetica' }}>
+        <AppBar position="static" elevation={0} style={AppBarStyle}>
             <Toolbar style={{ display:'flex', justifyContent:'flex-end'}}>
                 <div>
                     {/* Your navigation links */}
-                    <Button style={buttonStyles}>Home</Button>
-                    <Button style={buttonStyles}>About</Button>
-                    <Button style={buttonStyles}>Gallery</Button>
-                    <Button style={buttonStyles}>Event</Button>
-                    <Button variant="outlined" style={{ color:'#fff', backgroundColor:'#284b63', borderRadius:'30px', borderColor:'#fff', width:'120px' }}>Login</Button>
+                    <Button style={menuStyles}>Home</Button>
+                    <Button style={menuStyles}>About</Button>
+                    <Button style={menuStyles}>Gallery</Button>
+                    <Button style={menuStyles}>Event</Button>
+                    <Button variant="outlined" style={ButtonStyles}>
+                        <Link to='/'>Login</Link>
+                    </Button>
                 </div>
             </Toolbar>
         </AppBar>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, Button, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     const text= {
@@ -32,7 +33,9 @@ const Hero = () => {
                 <Grid item xs={12} style={{ paddingLeft:'70px' }}>
                     <Typography style={titleStyles}>List Event Banyumas</Typography><br />
                     <Typography style={subtitleStyles}>Memberikan Informasi mengenai event yang ada di Kabupaten Banyumas beserta pemesanan tiket event.</Typography>
-                    <Button variant="contained" style={buttonStyles}>Login</Button>
+                    <Button variant="contained" style={buttonStyles}>
+                        <Link to='/'>Login</Link>
+                    </Button>
                 </Grid>
             </Grid>
             <Grid item xs={6} >

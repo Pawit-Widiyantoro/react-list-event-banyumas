@@ -6,6 +6,7 @@ import About2 from "../Elements/LandingPageElements/About2";
 import Gallery from "../Elements/LandingPageElements/Gallery";
 import Footer from "../Fragments/Footer";
 import Events from "../Elements/LandingPageElements/Events";
+import Contact from "../Elements/LandingPageElements/Contact";
 
 const LandingPage = () => {
     return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
         <About2/>
         <Gallery/>
         <Events/>
+        <Contact/>
         <Footer/>
         </>
     )
