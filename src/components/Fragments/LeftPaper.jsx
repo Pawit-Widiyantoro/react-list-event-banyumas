@@ -2,6 +2,7 @@ import React from "react";
 import { InputLabel, Input, Paper, Grid, TextareaAutosize, Button } from "@mui/material";
 
 const LeftPaper= () => {
+    // inline styles
     const LeftPaperStyles={
         borderTop:'5px solid #3C6E71', 
         borderBottom:'5px solid #3C6E71', 
@@ -15,6 +16,7 @@ const LeftPaper= () => {
         marginTop:'10px', 
         height:'50px' 
     }
+    
     return(
         <>
         <Paper style={LeftPaperStyles}>

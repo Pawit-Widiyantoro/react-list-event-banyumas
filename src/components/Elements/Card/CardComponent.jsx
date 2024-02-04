@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardMedia, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import IconFooter from "./IconComponent";
 
 const EventCard = ({ event }) => {
     const cardStyles = {
@@ -44,24 +45,9 @@ const EventCard = ({ event }) => {
       />
       <CardContent style={{ flexGrow: 1 }}>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <img src="./assets/Vector.svg" alt="" styles={iconStyles} />
-            <Typography variant="body2" color="textSecondary" ml={1}>
-              {event.lokasi}
-            </Typography>
-          </div>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <img src="./assets/calendar-event-line.svg" alt="" styles={iconStyles} />
-            <Typography variant="body2" color="textSecondary" ml={1}>
-              {event.tgl_event}
-            </Typography>
-          </div>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <img src="./assets/timer-2-line.svg" alt="" styles={iconStyles} />
-            <Typography variant="body2" color="textSecondary" ml={1}>
-              {event.jam}
-            </Typography>
-          </div>
+          <IconFooter icon="./assets/Vector.svg" text={event.lokasi} />
+          <IconFooter icon="./assets/calendar-event-line.svg" text={event.tgl_event} />
+          <IconFooter icon="./assets/timer-2-line.svg" text={event.jam} />
         </div>
       </CardContent>
       <div style={{ display: "flex", justifyContent: "flex-end", p: 1 }}>

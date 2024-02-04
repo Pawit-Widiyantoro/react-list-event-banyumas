@@ -1,25 +1,8 @@
 import React from "react";
-import { IconButton } from "@mui/material";
-
-const SocialIconButton = ({ icon }) => {
-  const iconButtonStyles = {
-    backgroundColor: 'white',
-    marginRight: '5px',
-    padding: '5px',
-  };
-
-  const iconStyles = {
-    color: 'black',
-  };
-
-  return (
-    <IconButton style={iconButtonStyles}>
-      <i className={`fab ${icon}`} style={iconStyles}></i>
-    </IconButton>
-  );
-};
+import SocialIconButton from "../Elements/FooterElements/SocialAccountButton";
 
 const Footer = () => {
+  // inline styles
   const footerStyles = {
     backgroundColor: '#284b63',
     color: 'white',
